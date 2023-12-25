@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Lingga</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/logo/logo.svg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="home.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo/logo.svg" alt="">
+                <span>Klinik Lingga</span>
+            </a>
+              
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#layanan">Layanan</a></li>
+                    <li><a class="nav-link scrollto" href="#features">Features</a></li>
+                    <li><a class="nav-link scrollto" href="#img">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+                    <li onclick="document.getElementById('login').style.display='block'" style="width:auto;">
+                        <a class="getstarted scrollto" href="#login">Login Us</a>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
+
+    <div id="login" class="login"> <!--tampilan login-->
+        <form class="login-content animate" action="/action_page.php" method="post">
+            <div class="img_login">
+                <span onclick="document.getElementById('login').style.display='none'" class="close"
+                    title="Close login">&times;</span>
+                <img src="assets/img/logo/logo.svg" alt="Avatar" class="logo_login">
+            </div>
+
+            <div class="box_login">
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Masukan Username" name="username" required>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Masukan Password" name="password" required>
+
+                <button type="submit">Login</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="box_login">
+                <button type="button" onclick="document.getElementById('login').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <span class="password"><a href="user.html">Forgot password?</a></span>
+            </div>
+        </form>
+    </div> <!--end-->
+
+    <section id="home" class="home d-flex align-items-center"> <!--background home-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 data-aos="fade-up">Hallo, </h1>
+                    <h2 data-aos="fade-up" data-aos-delay="400">
+                        Tetapkan senyum indah Anda di Klinik Gigi Lingga! Kami dengan senang hati menyambut Anda dengan
+                        penuh kehangatan.<br>
+                        <br>Bersama, kita wujudkan senyuman sehat dan bahagia. Selamat datang!
+                    </h2>
+                    <div data-aos="fade-up" data-aos-delay="600">
+                        <div class="text-center text-lg-start">
+                            <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>Tujuan kami</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 home-img" data-aos="zoom-out" data-aos-delay="200">
+                    <img src="assets/img/home.png" class="img-fluid" alt="home">
+                </div>
+            </div>
+        </div>
+    </section> <!--end-->
+
+    <main id="main">
+        <section id="about" class="about"> <!--about us-->
+            <div class="container" data-aos="fade-up">
+                <div class="row gx-0">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                            <h3>About Us</h3>
+                            <h2>Selamat Datang di Klinik Gigi Lingga</h2>
+                            <p>
+                                Kami, di Klinik Gigi Lingga, percaya bahwa senyuman yang sehat adalah kunci kebahagiaan.
+                                Sejak pendirian kami, kami telah berkomitmen untuk memberikan pelayanan kesehatan gigi
+                                yang unggul dan perawatan yang personal kepada setiap pasien kami.
+                            </p>
+                            <h2>Misi</h2>
+                            <p>
+                                Dengan tim dokter gigi yang berpengalaman dan berdedikasi, kami berusaha untuk
+                                memberikan pelayanan berkualitas tinggi dengan pendekatan yang holistik. Kami memahami
+                                bahwa setiap pasien memiliki kebutuhan yang unik, dan kami berkomitmen untuk memberikan
+                                perawatan yang disesuaikan dengan kebutuhan individu.
+                            </p>
+                            <div class="text-center text-lg-start">
+                                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Hubungi Kami</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+                        <img src="assets/img/about.jpg" class="img-fluid" alt="about">
+                    </div>
+                </div>
+            </div> <!--end-->
+        </section>
+
+        <section id="layanan" class="layanan"> <!--jenis layanan-->
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h2>layanan</h2>
+                    <p>Pelayanan Kesehatan Gigi</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <a href="retainer.html">
+                            <img src="assets/img/rahang.png" class="img-fluid" alt="rahang"></a>
+                            <h3>Retainer (rahang)</h3>
+                            <p>Mempertahankan posisi gigi setelah perawatan ortodontik, mencegah pergeseran kembali</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src="assets/img/crown_gigi.png" class="img-fluid" alt="crown_gigi">
+                            <h3>Pemasangan Mahkota</h3>
+                            <p>untuk menutup dan memulihkan gigi rusak dengan memasang mahkota, memberikan perlindungan dan memulihkan fungsi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src="assets/img/Odontectomy.png" class="img-fluid" alt="Odontectomy">
+                            <h3>Odontectomy </h3>
+                            <p>bedah gigi untuk mengangkat gigi yang sulit diakses atau mengalami impaksi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="box">
+                            <img src="assets/img/scaling.png" class="img-fluid" alt="scaling">
+                            <h3>Scalling Banyak</h3>
+                            <p>menghilangkan plak dan tartar dari gigi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src="assets/img/gigi_tiruan.png" class="img-fluid" alt="gigi_tiruan">
+                            <h3>Gigi Tiruan Lengkap Acrilic </h3>
+                            <p>menggantikan semua gigi pada satu atau kedua rahang</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+                        <div class="box">
+                            <img src="assets/img/tambal_gigi.png" class="img-fluid" alt="tambal_gigi">
+                            <h3>Tambal Gigi</h3>
+                            <p>Mengisi atau memperbaiki kerusakan pada gigi yang terjadi akibat karies atau kerusakan lainnya</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+                        <div class="box">
+                            <img src="assets/img/pemutih_gigi.png" class="img-fluid" alt="pemutih_gigi">
+                            <h3>Pemutihan Gigi </h3>
+                            <p>Memutihkan gigi dan meningkatkan warna gigi yang mengalami perubahan warna atau kekuningan </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--end-->
+
+        <section id="rating" class="rating"> <!--rating-->
+            <div class="container" data-aos="fade-up">
+                <div class="row gy-3">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rating-box">
+                            <i class="bi bi-emoji-smile"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rating-box">
+                            <i class="bi bi-clipboard-data" style="color: #ee6c20;"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Data Pasien</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rating-box">
+                            <i class="bi bi-headset" style="color: #15be56;"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="37" data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Coustumer Support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rating-box">
+                            <i class="bi bi-house-check-fill" style="color: #15be56;"></i>
+                            <div>
+                                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                                <p>Cabang Klinik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--end-->
+
+        <section id="features" class="features"> <!--Featur-->
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h2>Features</h2>
+                    <p>Feature Akses</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/img/konsultasi.png" class="img-fluid" alt="konsultasi">
+                    </div>
+
+                    <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+                        <div class="row align-self-center gy-4">
+                            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Manajemen Janji dan Jadwal (MJJ)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Rekam Medis Elektronik (EMR)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Pembayaran dan Faktur (PF)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Komunikasi dan Konsultasi Online (KKO)</h3>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                                <div class="feature-box d-flex align-items-center">
+                                    <i class="bi bi-check"></i>
+                                    <h3>Privasi dan Keamanan (PK)</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row feture-tabs" data-aos="fade-up">
+                    <div class="col-lg-6">
+                        <h3>Informasi Lengkap Feature</h3>
+
+                        <!-- Tabs -->
+                        <ul class="nav nav-pills mb-3">
+                            <li><a class="nav-link active" data-bs-toggle="pill" href="#mjj">(MJJ)</a></li>
+                            <li><a class="nav-link" data-bs-toggle="pill" href="#emr">(EMR)</a></li>
+                            <li><a class="nav-link" data-bs-toggle="pill" href="#pf">(PF)</a></li>
+                            <li><a class="nav-link" data-bs-toggle="pill" href="#kko">(KKO)</a></li>
+                            <li><a class="nav-link" data-bs-toggle="pill" href="#pk">(PK)</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="mjj">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Pembuatan dan Pembatalan Janji Online</h4>
+                                </div>
+                                <p>Kemampuan untuk memilih waktu janji dan melakukan pembatalan jika diperlukan</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Kalender Jadwal Dokter</h4>
+                                </div>
+                                <p>Tampilan jadwal dokter dan ketersediaan waktu untuk memudahkan pemilihan janji</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Pengingat Janji</h4>
+                                </div>
+                                <p>Pengiriman pengingat otomatis melalui email atau pesan teks</p>
+                            </div>
+
+                            <div class="tab-pane fade show" id="emr">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Akses ke Rekam Medis Pribadi</h4>
+                                </div>
+                                <p>Pasien dapat melihat riwayat perawatan mereka dan hasil pemeriksaan</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Upload dan Penyimpanan Dokumen</h4>
+                                </div>
+                                <p>Fasilitas untuk mengunggah dokumen medis atau gambar radiologi</p>
+                            </div>
+
+                            <div class="tab-pane fade show" id="pf">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Pembayaran Tagihan Online</h4>
+                                </div>
+                                <p>Integrasi sistem pembayaran online untuk kenyamanan pasien</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Rincian Tagihan dan Histori Pembayaran</h4>
+                                </div>
+                                <p>Akses ke rincian tagihan dan catatan pembayaran sebelumnya</p>
+                            </div>
+
+                            <div class="tab-pane fade show" id="kko">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Fasilitas Chat atau Pesan</h4>
+                                </div>
+                                <p>Layanan pesan langsung untuk berkomunikasi dengan staf atau dokter</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Konsultasi Online</h4>
+                                </div>
+                                <p>Kemungkinan untuk mengajukan pertanyaan atau mendiskusikan masalah non-urgent secara
+                                    online</p>
+                            </div>
+
+                            <div class="tab-pane fade show" id="pk">
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Kebijakan Privasi dan Persetujuan Pengguna</h4>
+                                </div>
+                                <p>Menjelaskan bagaimana data pasien akan digunakan dan dijamin keamanannya</p>
+
+                                <div class="d-flex align-items-center mb-2">
+                                    <i class="bi bi-check2"></i>
+                                    <h4>Langkah-Langkah Keamanan Data</h4>
+                                </div>
+                                <p>Informasi tentang tindakan keamanan yang diambil untuk melindungi data pasien</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="assets/img/features-2.png" class="img-fluid" alt="features">
+                    </div>
+                </div>
+
+                <div class="row feature-icons" data-aos="fade-up">
+                    <h3>Kenapa Harus Memilih Klinik Gigi Lingga?</h3>
+                    <div class="row">
+                        <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+                            <img src="assets/img/features-3.png" class="img-fluid p-4" alt="features">
+                        </div>
+
+                        <div class="col-xl-8 d-flex content">
+                            <div class="row align-self-center gy-4">
+                                <div class="col-md-6 icon-box" data-aos="fade-up">
+                                    <i class="ri-line-chart-line"></i>
+                                    <div>
+                                        <h4>Experienced</h4>
+                                        <p>Berpengalaman dalam menjaga dan merawat senyum sehat kamu selama 10 Tahun</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                    <i class="ri-stack-line"></i>
+                                    <div>
+                                        <h4>Dokter Gigi Spesialis</h4>
+                                        <p>
+                                            Dokter gigi spesialis dan umum lulusan universitas negeri terbaik, yang
+                                            kompeten, ramah, dan komunikatif serta dilengkapi dengan peralatan lengkap
+                                            dan modern
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                    <i class="ri-brush-4-line"></i>
+                                    <div>
+                                        <h4>High Quality Tools & Materials</h4>
+                                        <p>Menggunakan alat dan bahan berkualitas terbaik dari brand-brand Internasional ternama</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                    <i class="ri-magic-line"></i>
+                                    <div>
+                                        <h4>Beatae veritatis</h4>
+                                        <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                    <i class="ri-command-line"></i>
+                                    <div>
+                                        <h4>Fasilitas Family Friendly</h4>
+                                        <p>
+                                            Ruangan tunggu di lengkapi dengan coffe break dan area bermain untuk anak-anak
+                                            serta ruang perawatan gigi yang didesain khusus untuk kenyamanan Anda dan Keluarga
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                    <i class="ri-radar-line"></i>
+                                    <div>
+                                        <h4>Intergrated Services</h4>
+                                        <p>
+                                            Menggunakan Teknologi dengan sistem yang terintegrasi sehingga memudahkan
+                                            Anda untuk reservasi dan menerima perawatan di seluruh cabang Damessa
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                    <i class="ri-radar-line"></i>
+                                    <div>
+                                        <h4>Cashless Ready</h4>
+                                        <p>
+                                            Menyediakan berbagai sistem pembayaran mulai dari virtual account hingga
+                                            pembayaran dengan berbagai jenis asuransi
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--end-->
+
+        <section id="faq" class="faq"> <!--faq-->
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h2>F.A.Q</h2>
+                    <p>Frequently Asked Questions</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-flush" id="faqlist1">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                                        Apa saja layanan yang disediakan oleh klinik gigi?
+                                    </button>
+                                </h2>
+                                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Menyediakan layanan pemeriksaan gigi, pembersihan gigi, perawatan gigi umum,
+                                        perawatan ortodonti, pelayanan bedah gigi, dan layanan lainnya terkait kesehatan
+                                        gigi
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                                        Bagaimana cara membuat janji di klinik gigi?
+                                    </button>
+                                </h2>
+                                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Anda dapat membuat janji dengan menghubungi klinik gigi secara langsung melalui
+                                        telepon atau melalui situs web resmi mereka. Beberapa klinik juga menyediakan
+                                        formulir pendaftaran online
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                                        Apakah klinik gigi menerima asuransi kesehatan?
+                                    </button>
+                                </h2>
+                                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                                    <div class="accordion-body">
+                                        Banyak klinik gigi menerima asuransi kesehatan. Pastikan untuk mengkonfirmasi
+                                        dengan staf klinik dan memberikan informasi asuransi Anda sebelum janji
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="accordion accordion-flush" id="faqlist2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                                        Berapa biaya untuk perawatan gigi tertentu?
+                                    </button>
+                                </h2>
+                                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        Biaya perawatan gigi dapat bervariasi tergantung pada jenis perawatan yang
+                                        diperlukan. Klinik gigi biasanya memberikan perkiraan biaya selama konsultasi
+                                        pertama
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                                        Apakah klinik gigi memiliki program diskon?
+                                    </button>
+                                </h2>
+                                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        Beberapa klinik gigi menawarkan program keanggotaan atau diskon untuk pasien
+                                        yang aktif secara teratur. Tanyakan kepada staf klinik mengenai opsi ini
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                                        Apa yang harus dilakukan dalam keadaan darurat gigi?
+                                    </button>
+                                </h2>
+                                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                                    <div class="accordion-body">
+                                        Dalam keadaan darurat gigi, segera hubungi klinik gigi atau pusat medis
+                                        setempat. Mereka dapat memberikan petunjuk langkah-langkah pertama dan
+                                        memberikan bantuan darurat
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--end-->
+
+        <section id="img" class="portfolio"> <!--img-->
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h2>Portfolio Pasien</h2>
+                    <p>Check our latest work</p>
+                </header>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-app">Rahang</li>
+                            <li data-filter=".filter-card">Tambal Gigi</li>
+                            <li data-filter=".filter-web">Tambah Mahkota</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/1.png" class="img-fluid" alt="img 1">
+                            <div class="portfolio-info">
+                                <h4>Rahang</h4>
+                                <p>Rahang</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/1.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="assets/img/2.png" class="img-fluid" alt="img 2">
+                            <div class="portfolio-info">
+                                <h4>Web 3</h4>
+                                <p>Web</p>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/2.png" data-gallery="portfolioGallery" class="portfokio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--end-->
+
+        <section id="team" class="team"> <!--daftar dokter-->
+            <div class="container" data-aos="fade-up">
+                <header class="section-header">
+                    <h2>Dokter</h2>
+                    <p>Daftar Dokter Klinik Lingga</p>
+                </header>
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="dokter 1">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Agus Setiawano</h4>
+                                <span>Gastroenterologi</span>
+                                <p>Dedikasinya dalam diagnosis dan penanganan penyakit saluran pencernaan. Ia memiliki
+                                    reputasi yang baik dalam memberikan perawatan holistik kepada pasien-pasiennya dan
+                                    aktif dalam penelitian untuk memajukan pemahaman tentang gangguan gastroenterologi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="dokter 2">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Bayong Tambayong</h4>
+                                <span>Bedah Ortopedi</span>
+                                <p>Dikenal sebagai ahli bedah ortopedi terkemuka yang telah berhasil menangani sejumlah
+                                    besar kasus pembedahan ortopedi yang kompleks. Keahliannya melibatkan teknik
+                                    pembedahan inovatif dan perhatian khusus terhadap pemulihan pasien</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="dokter 3">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Nadia Fitriani</h4>
+                                <span>Neurologi</span>
+                                <p>Keahliannya dalam diagnosis dan penanganan penyakit neurologis kompleks. Ia memiliki
+                                    dedikasi tinggi terhadap penelitian dan pengembangan terbaru dalam bidang neurologi,
+                                    serta telah memimpin beberapa proyek penelitian yang inovatif</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="dokter 4">
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4>Dr. Anita Wijaya</h4>
+                                <span>Ortodonti</span>
+                                <p>sebagai ahli ortodonti yang berdedikasi untuk menciptakan senyuman yang sehat dan
+                                    indah. Dengan pengalaman klinis yang luas, ia memiliki keahlian dalam merancang dan
+                                    menerapkan perawatan ortodonti yang efektif, memberikan perhatian khusus pada
+                                    kenyamanan pasien</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!--end-->
+    </main>
+
+    <footer id="footer" class="footer"> <!--footer-->
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Klinik_Lingga</span></strong>.
+            </div>
+            <div class="credits">
+                Designed by <a href="home.html#home">gavin & nyoman</a>
+            </div>
+        </div>
+    </footer> <!--end-->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>
